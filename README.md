@@ -1,21 +1,19 @@
 # MoRequester
 
-**TODO: Add description**
+Start with:
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `mo_requester` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:mo_requester, "~> 0.1.0"}
-  ]
-end
+```bash
+MO_URL="https://my_mo_url/..." iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/mo_requester](https://hexdocs.pm/mo_requester).
+or just run the tests with
+```
+MO_URL="https://my_mo_url/..." mix test
+```
+## Installation
 
+1. install elixir (v1.7) with either
+	a. `brew install elixir`
+	b. asdf install elixir 1.7
+2. install RUST (for XML parsing) `curl https://sh.rustup.rs -sSf | sh`
+3. get the deps: `mix deps.get`
